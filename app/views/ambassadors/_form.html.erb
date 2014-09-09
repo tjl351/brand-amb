@@ -1,0 +1,73 @@
+<%= form_for(@ambassador) do |f| %>
+  <% if @ambassador.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@ambassador.errors.count, "error") %> prohibited this ambassador from being saved:</h2>
+
+      <ul>
+      <% @ambassador.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :first_name %><br>
+    <%= f.text_field :first_name %>
+  </div>
+  <div class="field">
+    <%= f.label :last_name %><br>
+    <%= f.text_field :last_name %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :phone_number %><br>
+    <%= f.number_field :phone_number %>
+  </div>
+  <div class="field">
+    <%= f.label :age %><br>
+    <%= f.number_field :age %>
+  </div>
+  <div class="field">
+    <%= f.label :school %><br>
+    <%= f.text_field :school %>
+  </div>
+  <div class="field">
+    <%= f.label :activities %><br>
+    <%= f.text_field :activities %>
+  </div>
+  <div class="field">
+    <%= f.label :organizations %><br>
+    <%= f.text_field :organizations %>
+  </div>
+  <div class="field">
+    <%= f.label :spread_brand %><br>
+    <%= f.text_field :spread_brand %>
+  </div>
+  <div class="field">
+    <%= f.label :freedom_meaning %><br>
+    <%= f.text_field :freedom_meaning %>
+  </div>
+  <div class="field">
+    <%= f.label :hear_about %><br>
+    <%= f.text_field :hear_about %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br>
+    <%= f.text_field :address %>
+  </div>
+  <div class="field">
+    <%= f.label :social_media %><br>
+    <%= f.text_field :social_media %>
+  </div>
+  <div class="field">
+    <%= f.label :ambassador_code %><br>
+    <%= f.text_field :ambassador_code %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

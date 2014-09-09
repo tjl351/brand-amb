@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  first_name: MyString
+  last_name: MyString
+  email: MyString
+  phone_number: 1
+  age: 1
+  school: MyString
+  activities: MyString
+  organizations: MyString
+  spread_brand: MyString
+  freedom_meaning: MyString
+  hear_about: MyString
+  address: MyString
+  social_media: MyString
+  ambassador_code: MyString
+
+two:
+  first_name: MyString
+  last_name: MyString
+  email: MyString
+  phone_number: 1
+  age: 1
+  school: MyString
+  activities: MyString
+  organizations: MyString
+  spread_brand: MyString
+  freedom_meaning: MyString
+  hear_about: MyString
+  address: MyString
+  social_media: MyString
+  ambassador_code: MyString
